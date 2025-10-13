@@ -1,0 +1,15 @@
+#include <stdio.h>
+int main() {
+  int n,digit,count=0;
+  printf("enter a no:");
+  scanf("%d",&n);
+  printf("digits of the no are:");
+  while(n>0){
+      digit=n%10;
+      printf("%d\n",digit);
+      count=count+1;
+      n=n/10;
+  }
+  printf("no of digits are %d",count);
+  return 0;
+}
