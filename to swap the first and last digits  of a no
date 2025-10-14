@@ -1,0 +1,17 @@
+#include <stdio.h>
+int main() {
+    long long num,first,last,temp,place=1,new_num,middle;
+    printf("enter a no");
+    scanf("%lld",&num);
+    temp=num;
+    last=temp%10;
+    while(temp >=10){
+        temp=temp/10;
+        place=place*10;
+    }
+    first=temp;
+    middle=(num%place)/10;
+    new_num=last*place+middle*10+first;
+    printf("after swapping first and last digits:%lld\n",new_num);
+    return 0;
+}
