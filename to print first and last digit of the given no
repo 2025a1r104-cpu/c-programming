@@ -1,0 +1,14 @@
+#include <stdio.h>
+int main() {
+    long long num,first,last;
+    printf("enter a no");
+    scanf("%lld",&num);
+    last=num%10;
+    first=num;
+    while(first >=10){
+        first=first/10;
+    }
+    printf("first digit:%lld\n",first);
+    printf("last digit:%lld\n",last);
+    return 0;
+}
