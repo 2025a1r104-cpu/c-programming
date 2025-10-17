@@ -1,0 +1,25 @@
+#include <stdio.h>
+#include<math.h>
+int main() {
+    int num,digit,org_num,count=0,sum=0;
+    printf("enter a no");
+    scanf("%d",&num);
+    org_num=num;
+    while(num!=0){
+        num=num/10;
+        count++;
+    }
+    num=org_num;
+    while (num!=0){
+        digit=num%10;
+        sum=sum+pow(digit,count);
+        num=num/10;
+    }
+    if(sum==org_num){
+        printf("armstrong");
+    }
+    else{
+        printf("not armstrong");
+    }
+    return 0;
+}
